@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: true
+
+  roles:
+    - {
+      role: grababyte-gvisor
+    # role: grababyte-apparmor
+    # role: grababyte-falco
+    # role: grababyte-seccomp
+    }
